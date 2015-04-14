@@ -10,7 +10,7 @@ task :help do
   sh %{rake -T}
 end
 
-desc "install, ls and join riak nodes"
+desc "install, start, and join riak nodes"
 task :bootstrap => [:install, :start, :join]
 
 desc "start all riak nodes"
