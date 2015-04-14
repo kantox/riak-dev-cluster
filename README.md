@@ -18,9 +18,7 @@ OS X.
 
 ## Getting started
 
-Ensure that [Open File
-Limits](http://docs.basho.com/riak/latest/ops/tuning/open-files-limit/#Mac-OS-X)
-are set
+Ensure that [Open File Limits](http://docs.basho.com/riak/latest/ops/tuning/open-files-limit/#Mac-OS-X) are set
 
 Clone and navigate to the repository:
 
@@ -71,13 +69,7 @@ rake restart
 ## Riak Data Types
 
 There are a few `rake` commands that will set up your cluster to use
-[Riak Data
-Types](http://docs.basho.com/riak/2.0.0/dev/using/data-types/). You can
-create a [bucket
-type](http://docs.basho.com/riak/2.0.2/dev/advanced/bucket-types/) for
-using [Riak
-counters](http://docs.basho.com/riak/2.0.2/dev/using/data-types/#Counters)
-called `counters`:
+[Riak Data Types](http://docs.basho.com/riak/2.0.0/dev/using/data-types/). You can create a [bucket type](http://docs.basho.com/riak/2.0.2/dev/advanced/bucket-types/) for using [Riak counters](http://docs.basho.com/riak/2.0.2/dev/using/data-types/#Counters) called `counters`:
 
 ```
 rake counter_bucket
@@ -97,22 +89,42 @@ rake map_bucket
 
 ## Other commands
 
-See all available commands by running `rake -T` or just `rake` by
-itself.
+See all available commands by running `rake -T` or just `rake` by itself.
 
 ## Note
 
-Depending on your Erlang cookie, you may have to use the commands with
-`sudo`.
+Depending on your Erlang cookie, you may have to use the commands with `sudo`.
 
-## Authors
+### Maintainers
+
+* [Tyler Hannan](https://github.com/tylerhannan)
+
+You can [read the full guidelines](http://docs.basho.com/riak/latest/community/bugs/) for bug reporting and code contributions on the Riak Docs And **thank you!** Your coontribution is incredibly important to use.
+
+## License and Authors
 
 * [Erick Dennis](https://github.com/edennis)
 * [Sebastian Röbke](https://github.com/boosty)
-
-Updates by:
-
 * [Simon Vans-Colina](https://github.com/simonvc)
 * [Seth Thomas](https://github.com/cheeseplus)
 * [Joel Jacobson](https://github.com/joeljacobson)
-* [Tyler Hannan](https://github.com/tylerhannan)
+
+Copyright (c) 2015 Basho Technologies, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+[http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+See the License for the specific language governing permissions and
+limitations under the License.
+
+
+
+
+
