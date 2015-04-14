@@ -5,7 +5,7 @@ Riak Dev Cluster for OS X
 
 Easily run a 5-node [Riak](http://www.basho.com/riak) cluster on OS X.
 
-The Basho documentation enumerates the [Five Minute Install](http://docs.basho.com/riak/latest/quickstart/). This tutorial is based upon a source build, which can be a time-intensive process in some environment.
+The Basho documentation enumerates the [Five Minute Install](http://docs.basho.com/riak/latest/quickstart/). This tutorial is based upon a source build, which can be a time-intensive process in some environments.
 
 This repository uses the pre-packaged binaries for OS X (found in the [Downloads](http://docs.basho.com/riak/latest/downloads/) section of the documentation) to embed the Erlang runtime. This eliminates the need to build Riak from source and install Erlang.
 
