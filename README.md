@@ -95,6 +95,10 @@ See all available commands by running `rake -T` or just `rake` by itself.
 
 Depending on your Erlang cookie, you may have to use the commands with `sudo`.
 
+## Development
+
+Basho Labs repos survive because of community contribution. This module has extensive test coverage in order to make contributing easier. Please read [CONTRIBUTING](CONTRIBUTING.md) for details. 
+
 ### Maintainers
 
 * [Tyler Hannan](https://github.com/tylerhannan)
