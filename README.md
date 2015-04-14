@@ -5,9 +5,9 @@ Riak Dev Cluster for OS X
 
 Easily run a 5-node [Riak](http://www.basho.com/riak) cluster on OS X.
 
-The Basho documentation enumerates the [Five Minute Install](http://docs.basho.com/riak/latest/quickstart/). While a straightforward, and useful, exercise to undergo the tutorial is based upon a source build. As a result, in some environments, it can be a time-intensive process.
+The Basho documentation enumerates the [Five Minute Install](http://docs.basho.com/riak/latest/quickstart/). This tutorial is based upon a source build, which can be a time-intensive process in some environment.
 
-This repository uses the pre-packaged binaries for OS X (found in the [Downloads](http://docs.basho.com/riak/latest/downloads/) section of the documentation) embed the Erlang runtime. This eliminates the need to build Riak from source and install Erlang.
+This repository uses the pre-packaged binaries for OS X (found in the [Downloads](http://docs.basho.com/riak/latest/downloads/) section of the documentation) to embed the Erlang runtime. This eliminates the need to build Riak from source and install Erlang.
 
 By default, the rake task installs 5 nodes of Riak running on a local machine in a fashion similar to the `devrel` build target. In essence, it creates five full Riak stacks (including Erlang virtual machines) to run on one server to simulate a cluster. This is useful in a development environment, but running Riak on a single server for benchmarking or production use is counterproductive. This is discussed in greater detail in a blog post entitled [*Riak Development Anti-Patterns*](http://basho.com/riak-development-anti-patterns/)
 
