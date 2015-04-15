@@ -1,5 +1,5 @@
-RIAK_VERSION      = "2.0.5"
-RIAK_DOWNLOAD_URL = "http://s3.amazonaws.com/downloads.basho.com/riak/2.0/#{RIAK_VERSION}/osx/10.8/riak-#{RIAK_VERSION}-OSX-x86_64.tar.gz"
+RIAK_VERSION      = "2.1.0"
+RIAK_DOWNLOAD_URL = "http://s3.amazonaws.com/downloads.basho.com/riak/2.1/#{RIAK_VERSION}/osx/10.8/riak-#{RIAK_VERSION}-OSX-x86_64.tar.gz"
 NUM_NODES = 5
 RING_SIZE = 16
 BACKEND = 'leveldb' #options: bitcask, leveldb, memory.
