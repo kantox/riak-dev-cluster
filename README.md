@@ -145,8 +145,8 @@ read [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 You can [read the full
 guidelines](http://docs.basho.com/riak/latest/community/bugs/) for bug
-reporting and code contributions on the Riak Docs And **thank you!**
-Your coontribution is incredibly important to use.
+reporting and code contributions on the Basho Docs. And **thank you!**
+Your contribution is incredibly important to us.
 
 ## License and Authors
 
