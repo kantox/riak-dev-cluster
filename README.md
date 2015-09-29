@@ -21,6 +21,10 @@ in a blog post entitled [*Riak Development Anti-Patterns*](http://basho.com/riak
 ## Important Considerations
 * The names of the nodes are riak[1-5]@127.0.0.1
 * The HTTP port of riak1 is 11098: <http://127.0.0.1:11098>
+* Ports on other nodes are 12098, 13098, 14098 & 15098.
+* Protobuf port of riak1 is 11087.
+* Handoff port of riak1 is 11099.
+* https port is off, or same as http port.
 * Riak Control (Admin UI) is available [here](http://127.0.0.1:11098/admin)
 * All nodes use the [LevelDB storage backend](http://docs.basho.com/riak/latest/ops/advanced/backends/leveldb/)
 * [Riak Search](http://docs.basho.com/riak/latest/dev/using/search/) is disabled 
