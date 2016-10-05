@@ -1,7 +1,7 @@
-RIAK_VERSION      = "2.1.1"
+RIAK_VERSION      = "2.1.4"
 RIAK_DOWNLOAD_URL = "http://s3.amazonaws.com/downloads.basho.com/riak/2.1/#{RIAK_VERSION}/osx/10.8/riak-#{RIAK_VERSION}-OSX-x86_64.tar.gz"
 NUM_NODES = 5
-RING_SIZE = 16
+RING_SIZE = 64
 BACKEND = 'leveldb' #options: bitcask, leveldb, memory.
 
 task :default => :help
@@ -11,7 +11,7 @@ task :help do
 end
 
 desc "install, start, and join riak nodes"
-task :bootstrap => [:install, :start, :join]
+task :bootstrap => [:install, :start, :join, :rates_type_bucket]
 
 desc "start all riak nodes"
 task :start do
@@ -87,6 +87,19 @@ desc "set up maps bucket-type"
 task :map_bucket do
   sh %{riak1/bin/riak-admin bucket-type create maps '{"props":{"datatype":"map"}}'}
   sh %{riak1/bin/riak-admin bucket-type activate maps}
+end
+
+desc "leveldb stats"
+task :leveldb_stats do
+  sh %{du -hs riak{1,2,3,4,5}/data/leveldb}
+end
+
+desc "set up rates_type bucket-type"
+task :rates_type_bucket do
+  sh %{riak1/bin/riak-admin bucket-type create raw '{"props":{"datatype":"map"}}'}
+  sh %{riak1/bin/riak-admin bucket-type activate raw}
+  sh %{riak1/bin/riak-admin bucket-type update raw '{"props":{"backend":"leveldb"}}'}
+  sh %{riak1/bin/riak-admin bucket-type status raw}
 end
 
 desc "set up sets bucket-type"
